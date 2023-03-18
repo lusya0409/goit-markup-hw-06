@@ -417,69 +417,6 @@ body {
 
 /* ================/Main=================== */
 
-/* ================Footer================== */
-.footer .container {
-  display: flex;
-  justify-content: flex-start;
-}
-.footer-container-logo {
-  display: block;
-  max-width: 264px;
-}
-.footer-container-social {
-  margin-left: 120px;
-}
-
-.subtitle-social {
-  margin-bottom: 16px;
-  font-style: normal;
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--dark-theme-text-color);
-}
-.footer {
-  background: var(--dark-background-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.footer .logo {
-  display: inline-block;
-  margin-right: 0;
-  margin-bottom: 16px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.footer .logo-studio {
-  color: var(--dark-theme-logo-text-color);
-}
-
-.footer .section-description {
-  color: var(--dark-theme-secondary-text-color);
-}
-
-.footer .list-icon-social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  margin-top: 0;
-}
-
-.footer .link-icon-social {
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer .link-icon-social:hover,
-.footer .link-icon-social:focus {
-  background-color: var(--footer-icon-pressed-color);
-}
-.footer .icon-social {
-  width: 24px;
-  height: 24px;
-}
-/* ================/Footer==================== */
 /* =================Portfolio==================*/
 .section-works {
   padding-top: 96px;
@@ -516,7 +453,7 @@ body {
 
   border: var(--border-work-link-default-color);
   border-radius: 4px;
-  box-shadow: 0;
+  box-shadow: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -539,7 +476,7 @@ body {
 
   background-color: var(--primary-background-color);
   border: var(--border-work-link-default-color);
-  box-shadow: 0;
+  box-shadow: none;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -584,6 +521,141 @@ body {
 }
 
 /* ==============/Portfolio==========================*/
+
+/* ================Footer================== */
+.footer .container {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-container-logo {
+  display: block;
+  max-width: 264px;
+}
+.footer-container-social {
+  margin-left: 120px;
+}
+
+.subtitle-social {
+  margin-bottom: 16px;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark-theme-text-color);
+}
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background: var(--dark-background-color);
+}
+.footer .logo {
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer .logo-studio {
+  color: var(--dark-theme-logo-text-color);
+}
+
+.footer .section-description {
+  color: var(--dark-theme-secondary-text-color);
+}
+
+.footer .list-icon-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-top: 0;
+}
+
+.footer .link-icon-social {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .link-icon-social:hover,
+.footer .link-icon-social:focus {
+  background-color: var(--footer-icon-pressed-color);
+}
+.footer .icon-social {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-left: 80px;
+  align-self: flex-start;
+}
+
+.footer-form-input-desk {
+  display: block;
+  margin-bottom: 16px;
+
+  font-weight: 500;
+
+  color: var(--dark-theme-text-color);
+}
+.footer-form-input {
+  padding: 8px 16px;
+  min-width: 264px;
+
+  background-color: transparent;
+  color: var(--dark-theme-text-color);
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-input:focus {
+  border-color: var(--primary-brand-color);
+  outline: none;
+}
+
+.footer-form-input::placeholder {
+  color: currentColor;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.footer-form-submit {
+  margin-left: 24px;
+  padding: 8px 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  font-weight: 500;
+  letter-spacing: 0.04em;
+
+  border: none;
+  background-color: var(--primary-brand-color);
+  border-radius: 4px;
+  color: var(--dark-theme-text-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-btn-icon {
+  fill: var(--primary-background-color);
+}
+
+.footer-form-submit:hover,
+.footer-form-submit:focus {
+  background-color: var(--pressed-color);
+}
+/* ================/Footer==================== */
+
 /* ==============Modal Window======================= */
 .backdrop {
   position: fixed;
@@ -618,8 +690,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 576px;
-  min-height: 408px;
+  max-width: 408px;
+  min-height: 584px;
+  padding: 72px 24px 24px;
 
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -654,4 +727,144 @@ body {
 .modal-close-btn:focus .icon-modal-close {
   fill: var(--primary-background-color);
 }
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-text {
+  margin-bottom: 16px;
+
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+
+  color: var(--dark-background-color);
+}
+.modal-form-field {
+  margin-bottom: 8px;
+}
+.modal-form-input-desc {
+  display: block;
+  margin-bottom: 8px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: var(--border-icon-client-color);
+}
+
+.modal-form-input,
+.modal-form-message {
+  width: 100%;
+  padding: 8px 16px 8px 38px;
+
+  color: var(--secondary-text-color);
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-message {
+  height: 120px;
+  resize: none;
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+
+.modal-form-message::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.modal-form-input:focus,
+.modal-form-message:focus {
+  border-color: var(--primary-brand-color);
+  outline: none;
+}
+
+.modal-form-input-container {
+  position: relative;
+  display: block;
+}
+
+.modal-form-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--dark-background-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--primary-brand-color);
+}
+
+.user-policy-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.modal-form-check-desc {
+  position: relative;
+  display: block;
+  padding-left: 24px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--border-icon-client-color);
+}
+
+.modal-form-icon-check {
+  position: absolute;
+  fill: transparent;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid var(--dark-background-color);
+  border-radius: 2px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-check:checked + .modal-form-icon-check {
+  background-color: var(--pressed-color);
+  border: 1px solid var(--border-work-link-pressed-color);
+}
+
+.modal-form-check-link {
+  color: var(--primary-brand-color);
+}
+
+.modal-form-submit {
+  min-width: 169px;
+  padding: 16px 32px;
+  margin: 0 auto;
+
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--dark-theme-text-color);
+  background-color: var(--primary-brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+  background-color: var(--pressed-color);
+}
+
 /* ==============/Modal Window======================= */
